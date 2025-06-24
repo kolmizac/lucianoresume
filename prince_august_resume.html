@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Prince August Luciano - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --royal-blue: #4169E1;
+            --light-royal-blue: #6A8CD9;
+            --dark-royal-blue: #2A4B8D;
+            --background-light: #F8F8FF;
+            --text-dark: #333;
+            --text-light: #555;
+            --section-bg: #FFFFFF;
+            --border-color: #E0E0E0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background: var(--background-light);
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            color: var(--text-dark);
+        }
+        .container {
+            background: var(--section-bg);
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 950px;
+            width: 100%;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: 1fr 2fr;
+            }
+            .sidebar {
+                padding-right: 20px;
+                border-right: 1px solid var(--border-color);
+            }
+        }
+
+        .sidebar {
+            text-align: center;
+        }
+
+        .main-content {
+            padding-left: 20px;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--royal-blue);
+            display: block;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 10px 0 5px;
+            color: var(--dark-royal-blue);
+            font-weight: 700;
+            font-size: 2.2em;
+        }
+        header h2 {
+            color: var(--royal-blue);
+            margin: 0;
+            font-weight: 500;
+            font-size: 1.2em;
+        }
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.95em;
+            color: var(--text-light);
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact-info a {
+            color: var(--royal-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-info a:hover {
+            color: var(--dark-royal-blue);
+        }
+        .contact-info i {
+            margin-right: 8px;
+            color: var(--light-royal-blue);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+        h3 {
+            color: var(--royal-blue);
+            border-bottom: 3px solid var(--royal-blue);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 1.4em;
+        }
+        .item {
+            background: var(--background-light);
+            border-left: 5px solid var(--light-royal-blue);
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .item strong {
+            color: var(--dark-royal-blue);
+            font-weight: 500;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .item p, .item ul {
+            margin: 0;
+            padding: 0;
+            font-size: 0.95em;
+            color: var(--text-light);
+        }
+        .item ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 10px;
+        }
+        .item ul li {
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 15px;
+        }
+        .item ul li::before {
+            content: "\2022"; /* Bullet point */
+            color: var(--royal-blue);
+            position: absolute;
+            left: 0;
+        }
+
+        .skills-category h4 {
+            color: var(--dark-royal-blue);
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skills-list li {
+            background: var(--light-royal-blue);
+            color: white;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 25px;
+            font-size: 0.9em;
+            transition: background 0.3s ease;
+        }
+        .skills-list li:hover {
+            background: var(--dark-royal-blue);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: var(--text-light);
+            grid-column: 1 / -1; /* Span across both columns */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <header>
+                <img src="https://i.imgur.com/aZoR0n5.png" class="profile-photo" alt="Profile Photo" />
+                <h1>Prince August Luciano</h1>
+                <h2>Student</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:princeluciano@gmail.com">princeluciano@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> 09123456789</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Antipolo City, Philippines</p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/yourlinkedinprofile" target="_blank">yourlinkedinprofile</a></p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/yourgithubprofile" target="_blank">yourgithubprofile</a></p>
+                </div>
+            </header>
+
+            <section>
+                <h3><i class="fas fa-user-circle"></i> About Me</h3>
+                <div class="item">
+                    <p>As a proven leader with experience in various organizations, I possess strong project management, communication, and problem-solving skills. I excel in collaborative environments and am confident in my ability to contribute meaningfully.</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="main-content">
+            <section>
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="item"><strong>BS Computer Engineering</strong><br/>EARIST - Manila<br/>2024 - Present</div><div class="item"><strong>ICT - Programming Strand</strong><br/>Gardner College - Cainta<br/>2022 - 2024</div>
+            </section>
+
+            <section>
+                <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+                <div class="item"><strong>Academic Commissioner</strong><br/><br/>June 2022 – Present</div><div class="item"><strong>Tutor</strong><br/>Judith Tutorial<br/>Oct 2023 – Dec 2023<ul><li>Mathematics-based tutor</li></ul></div>
+            </section>
+
+            <section>
+                <h3><i class="fas fa-users"></i> Leadership Experience</h3>
+                <div class="item"><strong>Publication Material Officer 2 – ACES</strong><br/>Eulogio 'Amang' Institute of Science and Technology<br/>Oct 2024 – Present</div><div class="item"><strong>Secretary – Rise Up Organization</strong><br/>Gardner College - Cainta<br/>June 2023 – March 2024</div><div class="item"><strong>Assistant Secretary – Rise Up Org</strong><br/>Gardner College - Cainta<br/>June 2022 – March 2025</div><div class="item"><strong>President – ICT Organization</strong><br/>Bagong Nayon II National Highschool<br/>June 2018 – March 2019</div><div class="item"><strong>President – NDRRMC</strong><br/>Bagong Nayon II National Highschool<br/>June 2017 – March 2018</div>
+            </section>
+
+            <section class="skills">
+                <h3><i class="fas fa-tools"></i> Skills</h3>
+                <div class="skills-category"><h4>Technical Skills</h4><ul class="skills-list"><li>Computer Troubleshooting</li><li>Social Media Management</li></ul></div><div class="skills-category"><h4>Soft Skills</h4><ul class="skills-list"><li>Leadership</li><li>Critical Thinking</li><li>Problem-Solving</li><li>Teamwork & Collaboration</li><li>Project Management (school or org-based)</li></ul></div>
+            </section>
+        </div>
+
+        <footer>&copy; 2025 Prince August Luciano. All rights reserved.</footer>
+    </div>
+</body>
+</html>
